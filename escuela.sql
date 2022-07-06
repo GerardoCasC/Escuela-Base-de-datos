@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-06-2022 a las 21:07:56
+-- Tiempo de generación: 06-07-2022 a las 22:32:34
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -31,21 +31,21 @@ CREATE TABLE `alumnos` (
   `ID` int(11) UNSIGNED NOT NULL,
   `Nombre` varchar(30) NOT NULL,
   `Apellido` varchar(30) NOT NULL,
-  `Teléfono` varchar(15) NOT NULL,
-  `Correo electrónico` varchar(30) NOT NULL,
+  `Telefono` varchar(15) NOT NULL,
+  `Correo` varchar(30) NOT NULL,
   `Licenciatura` varchar(20) NOT NULL,
   `Cuatrimestre` varchar(20) NOT NULL,
-  `Status` varchar(4) NOT NULL
+  `Estatus` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `alumnos`
 --
 
-INSERT INTO `alumnos` (`ID`, `Nombre`, `Apellido`, `Teléfono`, `Correo electrónico`, `Licenciatura`, `Cuatrimestre`, `Status`) VALUES
+INSERT INTO `alumnos` (`ID`, `Nombre`, `Apellido`, `Telefono`, `Correo`, `Licenciatura`, `Cuatrimestre`, `Estatus`) VALUES
 (1, 'Gerardo', 'Casanova', '99465894', 'gerardo.cas@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1'),
 (2, 'Karen', 'Guillen', '998457843', 'karen.gui@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1'),
-(3, 'moana', 'Rivera', '932343242', 'moana.riv@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1'),
+(3, 'Moana', 'Rivera', '', 'moana.riv@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1'),
 (4, 'Augusto', 'Zamudio', '9983117006', 'augusto.zam@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1'),
 (5, 'Manuel', 'Euan', '852592525', 'manuel.eua@unid.mx', 'Ing. software y sist', 'Sexto cuatrimestre', '1');
 
@@ -109,6 +109,12 @@ ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indices de la tabla `materias`
+--
+ALTER TABLE `materias`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -117,6 +123,12 @@ ALTER TABLE `alumnos`
 --
 ALTER TABLE `alumnos`
   MODIFY `ID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de la tabla `materias`
+--
+ALTER TABLE `materias`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

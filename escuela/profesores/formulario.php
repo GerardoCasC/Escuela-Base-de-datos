@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +7,9 @@
     <title>Formulario</title>
 </head>
 <body>
-<small> <a href="../../alumnos/">Regresar</a></small>
-<form action="insert.php" method="post">
+<small> <a href="../../profesores/">Regresar</a></small>
+<form action ="insert.php" method="post">
+        <class="elem-group">
     <label for= "Nombre"> Nombre </label> <br>
     <input type= "text" id="Nombre" name="Nombre"> <br> <br>
 <label for="Apellido"> Apellido </label> <br>

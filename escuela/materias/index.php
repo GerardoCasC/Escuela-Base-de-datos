@@ -13,7 +13,7 @@ $materia = get_all_materias($connect);
 <body>
     <h1>Materias</h1>
     <small> <a href="../../escuela/">Regresar</a></small>
-    <small> <a href="../materias/insert.php/">Agregar</a></small>
+    <small> <a href="../materias/formulario.php/">Agregar materia</a></small>
     <table>
         <thead>
         <tr>

@@ -21,11 +21,11 @@ $alumno = mysqli_fetch_array($resultado);
             <th>ID</th>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Teléfono</th>
-            <th>Correo electrónico</th>
+            <th>Telefono</th>
+            <th>Correo</th>
             <th>Licenciatura</th>
             <th>Cuatrimestre</th>
-            <th>Status</th>
+            <th>Estatus</th>
 </tr>
 </thead>
 <tbody>
@@ -33,11 +33,11 @@ $alumno = mysqli_fetch_array($resultado);
     <td><?php echo $alumno["ID"]; ?></td>
     <td><?php echo $alumno["Nombre"]; ?></td>
     <td><?php echo $alumno["Apellido"]; ?></td>
-    <td><?php echo $alumno["Teléfono"]; ?></td>
-    <td><?php echo $alumno["Correo electrónico"]; ?></td>
+    <td><?php echo $alumno["Telefono"]; ?></td>
+    <td><?php echo $alumno["Correo"]; ?></td>
     <td><?php echo $alumno["Licenciatura"]; ?></td>
     <td><?php echo $alumno["Cuatrimestre"]; ?></td>
-    <td><?php echo $alumno["Status"]; ?></td>
+    <td><?php echo $alumno["Estatus"]; ?></td>
 </tr>
     <?php
     ?>
