@@ -13,9 +13,8 @@ $alumno = mysqli_fetch_array($resultado);
     <title>Formulario</title>
 </head>
 <body>
-<small> <a href="../../alumnos/">Regresar</a></small>
+<small> <a href="../alumnos/">Regresar</a></small>
 <form action ="update_query.php" method="post">
-        <class="elem-group">
     <input type= "hidden" id="ID" name="ID" value="<?php echo $alumno['ID']; ?>"> <br> <br>
     <label for= "Nombre"> Nombre </label> <br>
     <input type= "text" id="Nombre" name="Nombre" value="<?php echo $alumno['Nombre']; ?>"> <br> <br>
@@ -33,5 +32,6 @@ $alumno = mysqli_fetch_array($resultado);
     <input type= "text" id="Estatus" name="Estatus" value="<?php echo $alumno['Estatus']; ?>"> <br> <br>
     <input type= "submit" >
 </form>
+
 </body>
 </html>

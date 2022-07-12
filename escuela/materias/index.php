@@ -13,7 +13,7 @@ $materia = get_all_materias($connect);
 <body>
     <h1>Materias</h1>
     <small> <a href="../../escuela/">Regresar</a></small>
-    <small> <a href="../materias/formulario.php/">Agregar materia</a></small>
+    <small> <a href="formulario.php">Agregar materia</a></small>
     <table>
         <thead>
         <tr>
@@ -35,8 +35,10 @@ while ($fila = mysqli_fetch_array($materia)) {
     <td><?php echo $fila["Licenciatura"]; ?></td>
     <td><a href="detail.php?ID=<?php echo $fila
     ["ID"]; ?>">Detalle</a></td>
-    <td><a href="#">Editar</a></td>
-    <td><a href="#">Eliminar</a></td>
+    <td><a href="formulario_update.php?ID=<?php echo $fila
+    ["ID"]; ?>">Editar</a></td>
+    <td><a href="confirmardelete.php?ID=<?php echo $fila
+    ["ID"]; ?>">Eliminar</a></td>
 </tr>
     <?php
     }

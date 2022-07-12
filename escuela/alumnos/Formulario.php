@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
@@ -8,15 +9,15 @@
 </head>
 <body>
 <small> <a href="../../alumnos/">Regresar</a></small>
-<form action="insert.php" method="post">
+<form action ="insert.php" method="post">
     <label for= "Nombre"> Nombre </label> <br>
     <input type= "text" id="Nombre" name="Nombre"> <br> <br>
-<label for="Apellido"> Apellido </label> <br>
-<input type= "text" id="Apellido" name="Apellido"> <br> <br>
-<label for= "Telefono"> Telefono </label> <br>
-<input type= "text" id="Telefono" name="Telefono"> <br> <br>
-<label for= "Correo"> Correo </label> <br>
-<input type= "text" id="Correo" name="Correo"> <br> <br>
+    <label for= "Apellido"> Apellido </label> <br>
+    <input type= "text" id="Apellido" name="Apellido"> <br> <br>
+    <label for= "Telefono"> Telefono </label> <br>
+    <input type= "text" id="Telefono" name="Telefono"> <br> <br>
+    <label for= "Correo"> Correo </label> <br>
+    <input type= "text" id="Correo" name="Correo"> <br> <br>
     <label for= "Licenciatura"> Licenciatura </label> <br>
     <input type= "text" id="Licenciatura" name="Licenciatura"> <br> <br>
     <label for= "Cuatrimestre"> Cuatrimestre </label> <br>

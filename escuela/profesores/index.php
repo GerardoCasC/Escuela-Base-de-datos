@@ -13,18 +13,18 @@ $profesor = get_all_profesores($connect);
 <body>
     <h1>Profesores</h1>
     <small> <a href="../../escuela/">Regresar</a></small>
-    <small> <a href="../profesores/insert.php/">Agregar</a></small>
+    <small> <a href="formulario.php">Agregar</a></small>
     <table>
         <thead>
         <tr>
             <th>ID</th>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>Teléfono</th>
-            <th>Correo electrónico</th>
+            <th>Telefono</th>
+            <th>Correo</th>
             <th>Licenciatura</th>
             <th>Cuatrimestre</th>
-            <th>Status</th>
+            <th>Estatus</th>
 </tr>
 </thead>
 <tbody>
@@ -36,15 +36,17 @@ while ($fila = mysqli_fetch_array($profesor)) {
     <td><?php echo $fila["ID"]; ?></td>
     <td><?php echo $fila["Nombre"]; ?></td>
     <td><?php echo $fila["Apellido"]; ?></td>
-    <td><?php echo $fila["Teléfono"]; ?></td>
-    <td><?php echo $fila["Correo electrónico"]; ?></td>
+    <td><?php echo $fila["Telefono"]; ?></td>
+    <td><?php echo $fila["Correo"]; ?></td>
     <td><?php echo $fila["Licenciatura"]; ?></td>
     <td><?php echo $fila["Cuatrimestre"]; ?></td>
-    <td><?php echo $fila["Status"]; ?></td>
+    <td><?php echo $fila["Estatus"]; ?></td>
     <td><a href="detail.php?ID=<?php echo $fila
     ["ID"]; ?>">Detalle</a></td>
-    <td><a href="#">Editar</a></td>
-    <td><a href="#">Eliminar</a></td>
+    <td><a href="formulario_update.php?ID=<?php echo $fila
+    ["ID"]; ?>">Editar</a></td>
+    <td><a href="confirmardelete.php?ID=<?php echo $fila
+    ["ID"]; ?>">Eliminar</a></td>
 </tr>
     <?php
     }

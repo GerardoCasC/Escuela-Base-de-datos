@@ -13,7 +13,7 @@ $alumno = get_all_alumnos($connect);
 <body>
     <h1>Alumnos</h1> 
     <small> <a href="../../escuela/">Regresar</a></small>
-    <small> <a href="formulario.php/">Agregar alumno</a></small>
+    <small> <a href="formulario.php">Agregar alumno</a></small>
     <table>
         <thead>
         <tr>
@@ -45,7 +45,8 @@ while ($fila = mysqli_fetch_array($alumno)) {
     ["ID"]; ?>">Detalle</a></td>
     <td><a href="formulario_update.php?ID=<?php echo $fila
     ["ID"]; ?>">Editar</a></td>
-    <td><a href="#">Eliminar</a></td>
+    <td><a href="confirmardelete.php?ID=<?php echo $fila
+    ["ID"]; ?>">Eliminar</a></td>
     </tr>
     <?php
     }

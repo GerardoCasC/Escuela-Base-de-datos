@@ -13,8 +13,7 @@ $profesor = mysqli_fetch_array($resultado);
     <title>Escuela | Modelos de bases de datos</title>
 </head>
 <body>
-    <h1>Detalle del profesor <?php echo $profesor ["Apellido"]." ". $profesor ["Nombre"]
-     ?> <small> <a href="../profesores/">Regresar</a></small></h1>
+    <h2>Eliminar profesor<small> <a href="../profesores/">Regresar</a></small></h2>
     <table>
         <thead>
         <tr>
@@ -25,7 +24,7 @@ $profesor = mysqli_fetch_array($resultado);
             <th>Correo</th>
             <th>Licenciatura</th>
             <th>Cuatrimestre</th>
-            <th>Status</th>
+            <th>Estatus</th>
 </tr>
 </thead>
 <tbody>
@@ -37,12 +36,15 @@ $profesor = mysqli_fetch_array($resultado);
     <td><?php echo $profesor["Correo"]; ?></td>
     <td><?php echo $profesor["Licenciatura"]; ?></td>
     <td><?php echo $profesor["Cuatrimestre"]; ?></td>
-    <td><?php echo $profesor["Status"]; ?></td>
+    <td><?php echo $profesor["Estatus"]; ?></td>
 </tr>
-    <?php
-    ?>
-
 </tbody>
+<form action="delete.php" method="post">
+    
+    <h3>¿Desea elminar este profesor?</h3>
+    <input type= "hidden" id="ID" name="ID" value="<?php echo $profesor['ID']; ?>"> <br> <br>
+    <input type="submit" value="Confirmar">
+</form>
 </body>
 
 </html>

@@ -8,8 +8,9 @@ $Correo =$_POST["Correo"];
 $Licenciatura =$_POST["Licenciatura"];
 $Cuatrimestre =$_POST["Cuatrimestre"];
 $Estatus =$_POST["Estatus"];
+$ID =$_POST["ID"];
 
-insertar_alumnos($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus);
+update_profesores($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus, $ID);
 
 header("Location: index.php"); 
 ?> 
