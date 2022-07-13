@@ -47,7 +47,7 @@ function get_materia($connect, $ID){
 
     function update_alumnos($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus, $ID){
         global $connect;
-        //$consulta = "UPDATE alumnos SET Nombre='$Nombre', Apellido='$Apellido', Telefono='$Telefono', Correo='$Correo', Licenciatura='$Licenciatura', Cuatrimestre='$Cuatrimestre', Estatus='$Estatus' WHERE ID=$ID";
+        $consulta = "UPDATE alumnos SET Nombre='$Nombre', Apellido='$Apellido', Telefono='$Telefono', Correo='$Correo', Licenciatura='$Licenciatura', Cuatrimestre='$Cuatrimestre', Estatus='$Estatus' WHERE ID=$ID";
         //$resultado = mysqli_query($connect, $consulta);
     }
 
