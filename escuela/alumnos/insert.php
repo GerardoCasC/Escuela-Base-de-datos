@@ -11,5 +11,5 @@ $Estatus =$_POST["Estatus"];
 
 insertar_alumnos($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus);
 
-//header("Location: index.php"); 
+header("Location: index.php"); 
 ?> 
