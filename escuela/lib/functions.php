@@ -56,7 +56,8 @@ function get_materia($connect, $ID){
         $consulta = "INSERT INTO materias(Nombre, Licenciatura, Cuatrimestre)
                     VALUES ('$Nombre', '$Licenciatura', '$Cuatrimestre')";
         $resultado = mysqli_query($connect, $consulta);
-        //return $resultado;
+        return $resultado; if ($Nombre or $Apellido or $Telefono or $Correo or $Licenciatura or $Cuatrimestre or $Estatus == NULL) {
+         echo "<p>Rellena los cuadritos</p>;";}
         }
 
     function update_materia($Nombre, $Licenciatura, $Cuatrimestre, $ID){

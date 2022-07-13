@@ -25,6 +25,7 @@
     <label for= "Estatus"> Estatus </label> <br>
     <input type= "text" id="Estatus" name="Estatus"> <br> <br>
     <input type= "submit" >
+    
 </form>
 </body>
 </html>
