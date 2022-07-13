@@ -48,7 +48,7 @@ function get_materia($connect, $ID){
     function update_alumnos($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus, $ID){
         global $connect;
         $consulta = "UPDATE alumnos SET Nombre='$Nombre', Apellido='$Apellido', Telefono='$Telefono', Correo='$Correo', Licenciatura='$Licenciatura', Cuatrimestre='$Cuatrimestre', Estatus='$Estatus' WHERE ID=$ID";
-        //$resultado = mysqli_query($connect, $consulta);
+        $resultado = mysqli_query($connect, $consulta);
     }
 
     function insertar_materia($Nombre, $Licenciatura, $Cuatrimestre){
@@ -62,7 +62,7 @@ function get_materia($connect, $ID){
     function update_materia($Nombre, $Licenciatura, $Cuatrimestre, $ID){
         global $connect;
         $consulta = "UPDATE materias SET Nombre='$Nombre', Licenciatura='$Licenciatura', Cuatrimestre='$Cuatrimestre' WHERE ID=$ID";
-        //$resultado = mysqli_query($connect, $consulta);
+        $resultado = mysqli_query($connect, $consulta);
     }
 
     function insertar_profesores($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus){
@@ -76,7 +76,7 @@ function get_materia($connect, $ID){
     function update_profesores($Nombre, $Apellido, $Telefono, $Correo, $Licenciatura, $Cuatrimestre, $Estatus, $ID){
         global $connect;
         $consulta = "UPDATE profesores SET Nombre='$Nombre', Apellido='$Apellido', Telefono='$Telefono', Correo='$Correo', Licenciatura='$Licenciatura', Cuatrimestre='$Cuatrimestre', Estatus='$Estatus' WHERE ID=$ID";
-        //$resultado = mysqli_query($connect, $consulta);
+        $resultado = mysqli_query($connect, $consulta);
     }
 
     function delete_alumno($ID){

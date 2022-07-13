@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-07-2022 a las 03:19:12
+-- Tiempo de generación: 13-07-2022 a las 03:27:50
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -46,9 +46,9 @@ INSERT INTO `alumnos` (`ID`, `Nombre`, `Apellido`, `Telefono`, `Correo`, `Licenc
 (5, 'Manuelwefwe', 'Euan', '852592525', 'manuel.eua@unid.mx', 'Ingeniere', 'Sexto cuatrimestre', '0'),
 (14, 'Diego', 'Reza', '9942384243', 'Diego.Rez@unid.mx', 'Ing. software y sistemas', 'Sexto cuatrimestre', '1'),
 (23, 'Moana', 'fwge', 'fwefwe', 'ddwedw', 'Inge', 'Sexto cuatrimestre', '0'),
-(36, '', '', '', '1212', '', '', ''),
-(37, '', '', '', '433', '', '', ''),
-(39, '', '', '', '6543', '', '', '');
+(37, '', '', 'werwef', '433', '', '', ''),
+(39, '', '', '', '6543', 'sfdf', '', ''),
+(40, 'qeterhfgb', '', '', 't24wefsdc', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -134,7 +134,7 @@ ALTER TABLE `profesores`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `ID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `ID` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT de la tabla `materias`
